@@ -1,4 +1,33 @@
 
+{
+// class App {
+//     constructor() {
+//         this.text = "";
+//     }
+// }
+
+// class Child {
+//     constructor (one , two) {
+//         this.childOne = one;
+//         this.childTwo = two;
+//         this.isCorrect = 10;
+//     }
+
+//     print = ()=> {
+//         return ++this.isCorrect;
+//     }
+// }
+
+// let appClone = new App();
+// Object.assign(appClone.constructor.prototype,{print : new Child("abdo").print});
+// console.log(appClone.print());
+
+// let childClone = new Child();
+// console.log(childClone.print());
+
+}
+
+
 let card = document.querySelector(".app__card"),
     form = card.querySelector("form"),
     inputFile = form.querySelector("input"),
@@ -80,4 +109,29 @@ function copyQrLink(e) {
     navigator.clipboard.writeText(textArea.textContent);
     e.target.textContent = "💙 ع الرايق";
 }
+
+
+
+// problem ==> fizz buzz
+{
+
+    function fizzBuzz(num) {
+        for(let i=1 ; i <= num ; i++) {
+            if(i % 3 == 0 && i % 5 == 0) {
+                console.log("fizzBuzz " + i );
+            }else if(i % 3 == 0) {
+                console.log("fizz "  + i );
+            }else if(i % 5 == 0) {
+                console.log("buzz "  + i );
+            }else {
+                console.log(num);
+            }
+        }
+
+    }
+
+   fizzBuzz(15);
+}
+
+
 
