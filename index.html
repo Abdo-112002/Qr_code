@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QR_Generator</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body dir="rtl">
+
+
+        <main class="app">
+            <div class="container">
+                <div class="app__header">
+                    <h1 class="app__header--title">نورت ياصديقي 😍</h1>
+                </div>
+
+                <div class="app__card">
+                    <img src="#" alt="qr" />
+                    <form action="#">
+                        <input type="file" accept="image/x-png,image/gif,image/jpeg" hidden id="addFile">
+                        <div class="app__card--content">
+                            <i class='bx bx-cloud-upload' for="#addFile"></i>
+                            <h3 class="textMsg">اضغط هنا ياعم وخلينانشوف! 🤔</h3>
+                        </div>
+                        
+                    </form>
+
+                    <div class="form--details">
+                        <textarea disabled>hello</textarea>
+                        <div class="buttons">
+                            <button class="copy">😉 أنسخ بقا</button>
+                            <button class="close">😒 أقفلني</button>
+                        </div>
+                    </div>
+
+                </div><!-- ./app__card -->
+            </div><!-- ./container -->
+        </main><!-- ./wrapper -->
+
+
+        
+        <script src="./js/script.js"></script>
+    </body>
+</html>
+
